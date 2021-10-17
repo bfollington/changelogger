@@ -1,0 +1,11 @@
+{:paths ["src"]
+
+ :deps
+ {clj-time {:mvn/version "0.14.2"}}
+
+ :aliases
+ {;; test src
+  :test {:extra-paths ["test"]}
+
+   ;; benchmarking
+  :bench {:extra-deps {criterium {:mvn/version "0.4.4"}}}}}
